@@ -4,6 +4,22 @@ import {Link} from 'react-router-dom';
 
 
 function Nav() {
+
+  function openMenuPhone(){
+    let menuPhone = document.querySelector(".menu-phone")
+    let button = document.querySelector('.fa-bars')
+
+    menuPhone.style.display = "flex"
+  }
+
+  function closePhoneMenu(){
+    let menuPhone = document.querySelector(".menu-phone")
+    let button = document.querySelector('.fa-times')
+    
+    menuPhone.style.display = "none"
+    }
+  
+
   return (
    <nav className="navbar">
      <div className="left-nav">
@@ -29,6 +45,22 @@ function Nav() {
        <Link to="/contact">
        <button className="contact-btn">CONTACT</button>
        </Link>
+       <i className="fas fa-bars" onClick={() => openMenuPhone()}></i>
+        <div className="menu-phone">
+        <i class="fas fa-times" onClick={() => closePhoneMenu()}></i>
+          <Link to="/collections">
+          <li>COLLECTIONS</li>
+          </Link>
+          <Link to="/projects">
+          <li>PROJECTS</li>
+          </Link>
+          <Link to="/about">
+          <li>ABOUT</li>
+          </Link>
+          <Link to="/contact">
+          <li>CONTACT</li>
+          </Link>
+        </div>
      </div>
     
    </nav>
