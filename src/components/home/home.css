@@ -185,17 +185,12 @@
     margin-left: 0%;
   }
 
-  .tag-home-holder {
-    position: absolute;
-    bottom: -310px;
-  }
-
-  .tag-home {
-    width: auto;
-  }
+  /* .tag-home-holder {
+  
+  } */
 }
 
-@media only screen and (min-width: 320px) and (max-width: 767px) {
+@media only screen and (min-width: 320px) and (max-width: 568px) {
   .info-home {
     font-size: 24px;
   }
@@ -204,5 +199,7 @@
   }
   .tag-home {
     height: auto;
+    width: 100vw;
+    padding: 50px 50px;
   }
 }
