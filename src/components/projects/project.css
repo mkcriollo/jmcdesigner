@@ -139,4 +139,9 @@
     margin-right: 0px;
     width: auto;
   }
+  .project-display-holder {
+    margin-top: 0px;
+  }
+  .project-list-holder {
+  }
 }

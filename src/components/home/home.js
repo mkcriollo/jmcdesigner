@@ -7,6 +7,7 @@ function Home() {
 
   useEffect(() => {
       const navBar = document.querySelector('.navbar');
+      const menuPhone = document.querySelector('.fa-bars')
       const links = document.getElementsByClassName('linkColor')
       const contactBtn = document.querySelector('.contact-btn')
       const logo = document.querySelector('.logo');
@@ -14,6 +15,7 @@ function Home() {
       
       
       // change navbar background on load
+      menuPhone.style.color = "white"
       navBar.style.backgroundColor = 'transparent';
       navBar.style.position = 'fixed';
       navBar.classList.add('animate__animated')
@@ -35,7 +37,7 @@ function Home() {
       logo.style.color = '#fff'
 
       return () => {
-
+        menuPhone.style.color = 'black'
         // remove classes
         navBar.classList.remove('animate__animated')
       navBar.classList.remove('animate__fadeInDown')

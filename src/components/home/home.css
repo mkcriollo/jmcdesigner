@@ -188,16 +188,21 @@
   .tag-home-holder {
     position: absolute;
     bottom: -310px;
-    width: auto;
   }
 
   .tag-home {
-    width: 100vw;
+    width: auto;
   }
 }
 
 @media only screen and (min-width: 320px) and (max-width: 767px) {
   .info-home {
     font-size: 24px;
+  }
+  .tag-home-holder {
+    width: auto;
+  }
+  .tag-home {
+    height: auto;
   }
 }
