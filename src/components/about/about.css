@@ -206,3 +206,46 @@
     height: 250px;
   }
 }
+
+@media only screen and (min-width: 320px) {
+  .contact-about-holder {
+    flex-direction: column;
+    padding: 40px 15px;
+  }
+
+  .about-main-words {
+    padding: 40px 40px;
+    width: auto;
+    background-color: rgb(208, 215, 195);
+  }
+
+  .about-info-holder {
+    flex-direction: column-reverse;
+  }
+
+  .about-info-holder > span {
+    width: 100%;
+  }
+
+  .about-details {
+    width: fit-content;
+    padding: 36px 45px;
+  }
+
+  .info-part2-holder {
+    flex-direction: column;
+  }
+
+  .info-part2 {
+    width: 100%;
+    padding: 50px 50px;
+    height: auto;
+    box-sizing: content-box;
+    background-color: beige;
+  }
+
+  .wood-img {
+    margin-top: 50px;
+    margin-left: 0px;
+  }
+}
