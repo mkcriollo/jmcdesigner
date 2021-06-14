@@ -193,4 +193,10 @@
   .collect3 {
     left: 16px;
   }
+
+  .collect1 > p:after,
+  .collect2 > p::after,
+  .collect3 > p::after {
+    left: 370px;
+  }
 }

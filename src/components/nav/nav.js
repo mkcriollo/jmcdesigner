@@ -48,16 +48,16 @@ function Nav() {
        <i className="fas fa-bars" onClick={() => openMenuPhone()}></i>
         <div className="menu-phone">
         <i class="fas fa-times" onClick={() => closePhoneMenu()}></i>
-          <Link to="/collections">
+          <Link to="/collections" onClick={() => closePhoneMenu()}>
           <li>COLLECTIONS</li>
           </Link>
-          <Link to="/projects">
+          <Link to="/projects" onClick={() => closePhoneMenu()}>
           <li>PROJECTS</li>
           </Link>
-          <Link to="/about">
+          <Link to="/about" onClick={() => closePhoneMenu()}>
           <li>ABOUT</li>
           </Link>
-          <Link to="/contact">
+          <Link to="/contact" onClick={() => closePhoneMenu()}>
           <li>CONTACT</li>
           </Link>
         </div>
