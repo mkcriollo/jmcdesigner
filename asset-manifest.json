@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.7dee0e09.chunk.css",
-    "main.js": "/static/js/main.b209aec4.chunk.js",
-    "main.js.map": "/static/js/main.b209aec4.chunk.js.map",
+    "main.css": "/static/css/main.9d4a44c3.chunk.css",
+    "main.js": "/static/js/main.eb9404e6.chunk.js",
+    "main.js.map": "/static/js/main.eb9404e6.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.a58f425e.js",
     "runtime-main.js.map": "/static/js/runtime-main.a58f425e.js.map",
     "static/js/2.d6015f96.chunk.js": "/static/js/2.d6015f96.chunk.js",
@@ -10,18 +10,21 @@
     "static/js/3.2c3345da.chunk.js": "/static/js/3.2c3345da.chunk.js",
     "static/js/3.2c3345da.chunk.js.map": "/static/js/3.2c3345da.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.7dee0e09.chunk.css.map": "/static/css/main.7dee0e09.chunk.css.map",
+    "static/css/main.9d4a44c3.chunk.css.map": "/static/css/main.9d4a44c3.chunk.css.map",
     "static/js/2.d6015f96.chunk.js.LICENSE.txt": "/static/js/2.d6015f96.chunk.js.LICENSE.txt",
     "static/media/bandwcrystal.ea4ff160.jpg": "/static/media/bandwcrystal.ea4ff160.jpg",
     "static/media/blackmultipaint.fd743be4.jpg": "/static/media/blackmultipaint.fd743be4.jpg",
     "static/media/bluemultipaint.d2d53dec.jpg": "/static/media/bluemultipaint.d2d53dec.jpg",
     "static/media/bluestool.10dfc8aa.jpg": "/static/media/bluestool.10dfc8aa.jpg",
+    "static/media/bluestoolclose.78df8a24.jpg": "/static/media/bluestoolclose.78df8a24.jpg",
     "static/media/collections.css": "/static/media/pinkstool.cba4916f.jpg",
     "static/media/greenbench.4f92cf1c.png": "/static/media/greenbench.4f92cf1c.png",
     "static/media/greensidetable.04379611.jpg": "/static/media/greensidetable.04379611.jpg",
+    "static/media/greenstoolclose.aa3030bb.jpg": "/static/media/greenstoolclose.aa3030bb.jpg",
     "static/media/about.css": "/static/media/woodimg.45c9365e.jpeg",
     "static/media/home.css": "/static/media/mirror.46aa84c1.jpg",
     "static/media/location.css": "/static/media/nyc3gray.2045933e.jpeg",
+    "static/media/redstoolclose.92bbcc4c.jpg": "/static/media/redstoolclose.92bbcc4c.jpg",
     "static/media/v2blueseat.179017ed.jpg": "/static/media/v2blueseat.179017ed.jpg",
     "static/media/v2greenseat.369c7117.jpg": "/static/media/v2greenseat.369c7117.jpg",
     "static/media/v2orangeseat.164fb4bc.jpg": "/static/media/v2orangeseat.164fb4bc.jpg"
@@ -29,7 +32,7 @@
   "entrypoints": [
     "static/js/runtime-main.a58f425e.js",
     "static/js/2.d6015f96.chunk.js",
-    "static/css/main.7dee0e09.chunk.css",
-    "static/js/main.b209aec4.chunk.js"
+    "static/css/main.9d4a44c3.chunk.css",
+    "static/js/main.eb9404e6.chunk.js"
   ]
 }
