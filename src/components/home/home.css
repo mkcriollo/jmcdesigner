@@ -1,3 +1,34 @@
+/* responsive slider Css */
+
+/* .slider-view {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  background-color: red;
+}
+.slide-group {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.slide:first-child {
+  display: block;
+}
+
+.slide-group img {
+  width: 100%;
+  height: 100%;
+} */
+
+/* end of responsive slider */
+
 .home-page {
   background: url(../../imgs/mirrors/mirror.jpg) no-repeat center fixed;
   background-size: cover;

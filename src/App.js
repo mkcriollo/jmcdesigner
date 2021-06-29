@@ -6,6 +6,7 @@ import About from "./components/about/about";
 import Project from './components/projects/project.jsx'
 import Collections from "./components/collections/collections.jsx";
 import Location from "./components/location/location.jsx";
+import RhineCollection from './components/collectionShow/rhimestone.jsx';
 import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
 
 
@@ -20,6 +21,7 @@ function App() {
             <Route path="/projects" component={Project}/>
             <Route path="/collections" component={Collections}/>
             <Route path="/location" component={Location}/>
+            <Route path="/rhimestone" component={RhineCollection}/>
         </Switch>
       </div>
     </Router>

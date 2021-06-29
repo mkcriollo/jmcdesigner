@@ -184,6 +184,7 @@
 
   .info-part2-holder {
     margin-top: 0px;
+    margin-bottom: 100px;
   }
 
   .info-part2 {
@@ -207,7 +208,7 @@
   }
 }
 
-@media only screen and (min-width: 320px) {
+@media only screen and (min-width: 320px) and (max-width: 811px) {
   .contact-about-holder {
     flex-direction: column;
     padding: 40px 15px;
@@ -234,6 +235,7 @@
 
   .info-part2-holder {
     flex-direction: column;
+    margin-bottom: 0px;
   }
 
   .info-part2 {

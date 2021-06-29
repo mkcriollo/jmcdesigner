@@ -124,7 +124,7 @@
   }
 
   .project-holder > img {
-    height: 270px;
+    height: 100%;
   }
 
   .project-list-holder li {
@@ -133,11 +133,12 @@
   }
 }
 
-@media only screen and (min-width: 320px) {
+@media only screen and (min-width: 320px) and (max-width: 568px) {
   .project-holder {
     margin-left: 0px;
     margin-right: 0px;
     width: auto;
+    height: fit-content;
   }
   .project-display-holder {
     margin-top: 0px;

@@ -1,6 +1,9 @@
 import './home.css';
 import React,  {useState, useEffect} from 'react'
 import { Link } from "react-router-dom";
+import mirrorSlide from '../../imgs/mirrors/mirror.jpg';
+import tableSlide from '../../imgs/tables/bluemultipaint.jpg'
+import chairSlide from '../../imgs/chairs/pinkstool.jpg'
 
 
 function Home() {
@@ -66,6 +69,26 @@ function Home() {
 
   return (
     <div className="home-page">
+      
+        {/*Responsive slider for Home Page*/}
+        {/* <div className="slider">
+          <div className="slide-viewer">
+            <div className="slide-group">
+              <div className="slide slide-1">
+                <img src={mirrorSlide}></img>
+              </div>
+              <div className="slide slide-2">
+                <img src={tableSlide}></img>
+              </div>
+              <div className="slide slide-3">
+                <img src={chairSlide}></img>
+              </div>
+            </div>
+          </div>
+          <div className="slide-buttons"></div>
+        </div> */}
+        {/*end of responsive slider*/} 
+
         <div className="info-and-nav">
             <div className="info-home">
               <h2>MODERNO</h2>
