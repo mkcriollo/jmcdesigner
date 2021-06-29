@@ -27,6 +27,33 @@ function rhineStoneCollection(){
                     </p>
                 </div>
             </div>
+            <div className="rhinestone-info-main-holder">
+                <div className="rhinestone-center-info">
+                    <div className="rhinestone-info-word-holder">
+                        <p>
+                        The Rhinestone collection is a custom made collection design with x in the year 2017. Every piece drawn and visualized in what would be the perfect piece for the modern extravagant client.
+                        </p>
+                    </div>
+                    <div className="rhinestone-pic1-holder">
+                        <img src={rhineChairImg1} alt="" />
+                        <p>RHINESTONE CHAIR</p>
+                    </div>
+                    <div className="rhinestone-pic2-holder">
+                        <img src={rhineChairImg2} alt="" />
+                        <p>RHINESTONE CHAIR</p>
+                    </div>
+                    <div className="rhinestone-pic3-holder">
+                        <img src={rhineChairImg3} alt="" />
+                        <p>RHINESTONE CHAIR</p>
+                    </div>
+                    <div className="rhinestone-pic4-holder">
+                        <img src={rhineTableImg} alt="" />
+                        <p>RHINESTONE TABLE</p>
+                    </div>
+
+                </div>
+                
+            </div>
         
         </div>
     )

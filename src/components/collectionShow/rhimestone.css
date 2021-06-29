@@ -1,7 +1,11 @@
 .rhine-full {
   width: 100vw;
-  height: 100vh;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
+
+/* rhinestone header */
 
 .rhine-main-img {
   width: 100%;
@@ -59,10 +63,127 @@
   font-family: "Roboto", sans-serif;
 }
 
+/* rhinestone info */
+
+.rhinestone-info-main-holder {
+  width: 100vw;
+  /* height: fit-content; */
+  height: 2000px;
+  /* background-color: beige; */
+  display: flex;
+  justify-content: center;
+}
+
+.rhinestone-center-info {
+  width: 1300px;
+  height: 100%;
+  /* background-color: cadetblue; */
+  position: relative;
+}
+
+.rhinestone-info-word-holder {
+  position: absolute;
+  width: 400px;
+  height: 300px;
+  /* background-color: brown; */
+  top: 3%;
+  left: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rhinestone-info-word-holder > p {
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  color: #333333;
+  line-height: 30px;
+}
+.rhinestone-pic1-holder {
+  position: absolute;
+  width: fit-content;
+  height: fit-content;
+  right: 13%;
+  top: 10%;
+}
+
+.rhinestone-pic1-holder > img {
+  object-fit: cover;
+}
+
+.rhinestone-pic1-holder > p::after {
+  content: "|";
+  position: absolute;
+  font-weight: 300;
+  right: 0;
+}
+
+.rhinestone-pic2-holder {
+  position: absolute;
+  width: fit-content;
+  height: fit-content;
+  left: 7%;
+  top: 20%;
+}
+
+.rhinestone-pic2-holder > img {
+  object-fit: cover;
+}
+
+.rhinestone-pic2-holder > p::after {
+  content: "|";
+  position: absolute;
+  font-weight: 300;
+  right: 0;
+}
+
+.rhinestone-pic3-holder {
+  position: absolute;
+  width: fit-content;
+  height: fit-content;
+  right: 7%;
+  top: 50%;
+}
+
+.rhinestone-pic3-holder > img {
+  object-fit: cover;
+}
+
+.rhinestone-pic3-holder > p::after {
+  content: "|";
+  position: absolute;
+  font-weight: 300;
+  right: 0;
+}
+
+.rhinestone-pic4-holder {
+  position: absolute;
+  width: fit-content;
+  height: fit-content;
+  left: 5%;
+  top: 65%;
+}
+
+.rhinestone-pic4-holder > img {
+  object-fit: cover;
+  height: 500px;
+}
+
+.rhinestone-pic4-holder > p::after {
+  content: "|";
+  position: absolute;
+  font-weight: 300;
+  right: 0;
+}
+
 /* Mobile Adjustments */
 
 /* iPhone */
 @media only screen and (min-width: 320px) and (max-width: 568px) {
+  .rhinestone-info-main-holder {
+    height: fit-content;
+  }
+
   .rhinestone-collect-h1 > h1:first-child {
     font-size: 20px;
     color: #333;
@@ -89,7 +210,99 @@
     height: 200px;
   }
 
-  .rhine-main-img > img {
+  /* rhinestone info mobile */
+
+  .rhinestone-info-main-holder {
+    flex-direction: column;
+  }
+
+  .rhinestone-center-info {
+    width: 100vw;
+  }
+
+  .rhinestone-info-word-holder {
+    width: 100vw;
+    position: relative;
+    left: 0;
+    top: 0;
+    padding: 30px 15px;
+    box-sizing: border-box;
+  }
+
+  .rhinestone-info-word-holder > p {
+    font-size: 14px;
+  }
+
+  .rhinestone-pic1-holder {
+    position: relative;
+    right: 0;
+    top: 0;
+    margin-bottom: 50px;
+    padding: 0px 13px;
+    box-sizing: border-box;
+  }
+  .rhinestone-pic1-holder > img {
+    width: 388px;
+    height: 510px;
+  }
+
+  .rhinestone-pic1-holder > p {
+    margin-top: 20px;
+    font-size: 12px;
+  }
+
+  .rhinestone-pic2-holder {
+    position: relative;
+    left: 0;
+    top: 0;
+    margin-bottom: 50px;
+    padding: 0px 13px;
+    box-sizing: border-box;
+  }
+  .rhinestone-pic2-holder > img {
+    width: 388px;
+    height: 510px;
+  }
+
+  .rhinestone-pic2-holder > p {
+    margin-top: 20px;
+    font-size: 12px;
+  }
+
+  .rhinestone-pic3-holder {
+    position: relative;
+    right: 0;
+    top: 0;
+    margin-bottom: 50px;
+    padding: 0px 13px;
+    box-sizing: border-box;
+  }
+  .rhinestone-pic3-holder > img {
+    width: 388px;
+    height: 510px;
+  }
+
+  .rhinestone-pic3-holder > p {
+    margin-top: 20px;
+    font-size: 12px;
+  }
+
+  .rhinestone-pic4-holder {
+    position: relative;
+    left: 0;
+    top: 0;
+    margin-bottom: 50px;
+    padding: 0px 13px;
+    box-sizing: border-box;
+  }
+  .rhinestone-pic4-holder > img {
+    width: 388px;
+    height: 510px;
+  }
+
+  .rhinestone-pic4-holder > p {
+    margin-top: 20px;
+    font-size: 12px;
   }
 }
 
