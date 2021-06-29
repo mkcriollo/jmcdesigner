@@ -40,17 +40,17 @@ function rhineStoneCollection(){
                     </div>
                     <div className="rhinestone-pic1-holder">
                         <img src={rhineChairImg1} alt="" />
-                        <img src={blueRhineChairClose} alt="" />
+                        <img src={blueRhineChairClose} className="extrapics" alt="" />
                         <p>RHINESTONE CHAIR</p>
                     </div>
                     <div className="rhinestone-pic2-holder">
                         <img src={rhineChairImg2} alt="" />
-                        <img src={greenRhineChairClose} alt="" />
+                        <img src={greenRhineChairClose} className="extrapics" alt="" />
                         <p>RHINESTONE CHAIR</p>
                     </div>
                     <div className="rhinestone-pic3-holder">
                         <img src={rhineChairImg3} alt="" />
-                        <img src={redRhineChairClose} alt="" />
+                        <img src={redRhineChairClose} className="extrapics" alt="" />
                         <p>RHINESTONE CHAIR</p>
                     </div>
                     <div className="rhinestone-pic4-holder">

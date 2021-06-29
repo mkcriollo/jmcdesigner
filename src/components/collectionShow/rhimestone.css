@@ -192,6 +192,10 @@
   right: 0;
 }
 
+.extrapics {
+  display: none;
+}
+
 /* Mobile Adjustments */
 
 /* iPhone */
@@ -347,6 +351,10 @@
   }
   .rhinestone-pic4-holder > p::after {
     right: 15px;
+  }
+
+  .extrapics {
+    display: block;
   }
 }
 /* 
