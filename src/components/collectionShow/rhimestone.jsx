@@ -7,6 +7,10 @@ import rhineChairImg2 from '../../imgs/chairs/v2greenseat.jpg'
 import rhineChairImg3 from '../../imgs/chairs/v2orangeseat.jpg'
 import rhineTableImg from '../../imgs/tables/bandwcrystal.jpg'
 
+import redRhineChairClose from '../../imgs/chairs/redstoolclose.jpg'
+import blueRhineChairClose from '../../imgs/chairs/bluestoolclose.jpg'
+import greenRhineChairClose from '../../imgs/chairs/greenstoolclose.jpg'
+
 function rhineStoneCollection(){
 
     return (
@@ -36,14 +40,17 @@ function rhineStoneCollection(){
                     </div>
                     <div className="rhinestone-pic1-holder">
                         <img src={rhineChairImg1} alt="" />
+                        <img src={blueRhineChairClose} alt="" />
                         <p>RHINESTONE CHAIR</p>
                     </div>
                     <div className="rhinestone-pic2-holder">
                         <img src={rhineChairImg2} alt="" />
+                        <img src={greenRhineChairClose} alt="" />
                         <p>RHINESTONE CHAIR</p>
                     </div>
                     <div className="rhinestone-pic3-holder">
                         <img src={rhineChairImg3} alt="" />
+                        <img src={redRhineChairClose} alt="" />
                         <p>RHINESTONE CHAIR</p>
                     </div>
                     <div className="rhinestone-pic4-holder">
