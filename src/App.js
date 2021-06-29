@@ -21,7 +21,7 @@ function App() {
             <Route path="/projects" component={Project}/>
             <Route path="/collections" component={Collections}/>
             <Route path="/location" component={Location}/>
-            <Route path="/rhimestone" component={RhineCollection}/>
+            <Route path="/rhinestone" component={RhineCollection}/>
         </Switch>
       </div>
     </Router>

@@ -1,5 +1,6 @@
 import React from 'react';
 import './collections.css';
+import { Link } from "react-router-dom";
 
 function Collections(){
     return (
@@ -8,10 +9,12 @@ function Collections(){
                 <div></div>
                 <p>BUGATTI COLLECTION</p>
             </div>
-            <div className="collect2 animate__animated animate__fadeInDown">
-                <div></div>
-                <p>RHIMESTONE COLLECTION</p>
-            </div>
+            <Link to="/rhinestone">
+                <div className="collect2 animate__animated animate__fadeInDown">
+                    <div></div>
+                    <p>RHIMESTONE COLLECTION</p>
+                </div>
+            </Link>
             <div className='collect3 animate__animated animate__fadeInDown'>
                 <div></div>
                 <p>CLASSICAL COLLECTION</p>
