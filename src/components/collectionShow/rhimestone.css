@@ -111,6 +111,10 @@
   object-fit: cover;
 }
 
+.rhinestone-pic1-holder > p {
+  font-family: "Roboto", sans-serif;
+}
+
 .rhinestone-pic1-holder > p::after {
   content: "|";
   position: absolute;
@@ -128,6 +132,10 @@
 
 .rhinestone-pic2-holder > img {
   object-fit: cover;
+}
+
+.rhinestone-pic2-holder > p {
+  font-family: "Roboto", sans-serif;
 }
 
 .rhinestone-pic2-holder > p::after {
@@ -149,6 +157,10 @@
   object-fit: cover;
 }
 
+.rhinestone-pic3-holder > p {
+  font-family: "Roboto", sans-serif;
+}
+
 .rhinestone-pic3-holder > p::after {
   content: "|";
   position: absolute;
@@ -167,6 +179,10 @@
 .rhinestone-pic4-holder > img {
   object-fit: cover;
   height: 500px;
+}
+
+.rhinestone-pic4-holder > p {
+  font-family: "Roboto", sans-serif;
 }
 
 .rhinestone-pic4-holder > p::after {
@@ -204,7 +220,8 @@
   }
 
   .rhine-collect-title-holder {
-    left: 45%;
+    right: 5%;
+    left: auto;
     width: 200px;
     background: aliceblue;
     height: 200px;
@@ -304,7 +321,67 @@
     margin-top: 20px;
     font-size: 12px;
   }
+
+  .rhinestone-pic1-holder > img {
+    width: 100%;
+  }
+  .rhinestone-pic2-holder > img {
+    width: 100%;
+  }
+  .rhinestone-pic3-holder > img {
+    width: 100%;
+  }
+  .rhinestone-pic4-holder > img {
+    width: 100%;
+    height: 300px;
+  }
+
+  .rhinestone-pic1-holder > p::after {
+    right: 15px;
+  }
+  .rhinestone-pic2-holder > p::after {
+    right: 15px;
+  }
+  .rhinestone-pic3-holder > p::after {
+    right: 15px;
+  }
+  .rhinestone-pic4-holder > p::after {
+    right: 15px;
+  }
 }
+/* 
+@media only screen and (min-width: 320px) and (max-width: 330px) {
+  .rhinestone-pic1-holder > img {
+    width: 290px;
+  }
+  .rhinestone-pic2-holder > img {
+    width: 290px;
+  }
+  .rhinestone-pic3-holder > img {
+    width: 290px;
+  }
+  .rhinestone-pic4-holder > img {
+    width: 290px;
+    height: 300px;
+  }
+
+  .rhine-collect-title-holder {
+    left: 32%;
+  }
+
+  .rhinestone-pic1-holder > p::after {
+    right: 15px;
+  }
+  .rhinestone-pic2-holder > p::after {
+    right: 15px;
+  }
+  .rhinestone-pic3-holder > p::after {
+    right: 15px;
+  }
+  .rhinestone-pic4-holder > p::after {
+    right: 15px;
+  }
+} */
 
 /* Css for old collections style */
 
