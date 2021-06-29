@@ -1,18 +1,96 @@
 .rhine-full {
   width: 100vw;
   height: 100vh;
-  background-color: red;
 }
 
 .rhine-main-img {
   width: 100%;
   height: 500px;
+  position: relative;
 }
 
 .rhine-main-img > img {
   width: 100%;
   height: 500px;
   object-fit: cover;
+}
+
+.rhine-collect-title-holder {
+  position: absolute;
+  width: fit-content;
+  height: fit-content;
+  bottom: 20%;
+  left: 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.rhinestone-collect-h1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.rhinestone-collect-h1 > h1:first-child {
+  font-size: 36px;
+  letter-spacing: 3px;
+  font-weight: 700;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  margin-right: 10px;
+}
+
+.rhinestone-collect-h1 > h1 {
+  font-size: 36px;
+  letter-spacing: 3px;
+  font-weight: 300;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+}
+
+.rhine-collect-title-holder > p {
+  margin-top: 12px;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Mobile Adjustments */
+
+/* iPhone */
+@media only screen and (min-width: 320px) and (max-width: 568px) {
+  .rhinestone-collect-h1 > h1:first-child {
+    font-size: 20px;
+    color: #333;
+  }
+
+  .rhinestone-collect-h1 > h1 {
+    font-size: 20px;
+    color: #333;
+  }
+
+  .rhinestone-collect-h1 {
+    flex-direction: column;
+  }
+
+  .rhine-collect-title-holder > p {
+    color: #333;
+    font-size: 10px;
+  }
+
+  .rhine-collect-title-holder {
+    left: 45%;
+    width: 200px;
+    background: aliceblue;
+    height: 200px;
+  }
+
+  .rhine-main-img > img {
+  }
 }
 
 /* Css for old collections style */

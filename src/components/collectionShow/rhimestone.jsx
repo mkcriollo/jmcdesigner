@@ -13,8 +13,20 @@ function rhineStoneCollection(){
         <div className="rhine-full">
             <div className="rhine-main-img">
                 <img src={mainRhineImg} alt="" />
+                <div className="rhine-collect-title-holder">
+                    <div className="rhinestone-collect-h1">
+                        <h1>
+                            <strong>RHINESTONE</strong>
+                        </h1>
+                        <h1>
+                            COLLECTION
+                        </h1>
+                    </div>
+                    <p>
+                        A TOUCH OF MODERN ON ANTIQUE.
+                    </p>
+                </div>
             </div>
-
         
         </div>
     )
