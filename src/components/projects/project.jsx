@@ -1,133 +1,119 @@
-import React, {useState,useEffect} from 'react'
-import './project.css';
+import React, { useState, useEffect } from "react";
+import "./project.css";
+import TableContent from "./table-content";
 
-// import pictures 
+// import pictures
 
 // chairs images
-import Bluestool from '../../imgs/chairs/bluestool.jpg';
-import Pinkstool from '../../imgs/chairs/pinkstool.jpg';
-import V2blue from '../../imgs/chairs/v2blueseat.jpg';
-import V2orange from '../../imgs/chairs/v2orangeseat.jpg';
-import V2green from '../../imgs/chairs/v2greenseat.jpg';
+import Bluestool from "../../imgs/chairs/bluestool.png";
+import Pinkstool from "../../imgs/chairs/pinkstool.png";
+import V2blue from "../../imgs/chairs/v2blueseat.png";
+import V2orange from "../../imgs/chairs/v2orangeseat.png";
+import V2green from "../../imgs/chairs/v2greenseat.png";
+import silverMultiColor from "../../imgs/chairs/silverMultiColorPairChair.png";
 
 // table images
-import Blackcrystaltable from '../../imgs/tables/bandwcrystal.jpg';
-import Blacksplashtable from '../../imgs/tables/blackmultipaint.jpg';
-import Bluesplashtable from '../../imgs/tables/bluemultipaint.jpg';
-import Greenbench from '../../imgs/tables/greenbench.png';
-import Greensidetable from '../../imgs/tables/greensidetable.jpg';
+import Blackcrystaltable from "../../imgs/tables/bandwcrystal.png";
+import Blacksplashtable from "../../imgs/tables/blackmultipaint.png";
+import Bluesplashtable from "../../imgs/tables/bluemultipaint.png";
+import Greenbench from "../../imgs/tables/greenbench.png";
+import Greensidetable from "../../imgs/tables/greensidetable.png";
+import blackBaseBrownTop from "../../imgs/tables/blackBaseBrownTopCoffeeTable.png";
+import bugattiSideTable from "../../imgs/tables/bugattiSideTable.png";
+import whiteGoldVTable from "../../imgs/tables/whiteGoldVShapeTable.png";
+import blackPairMirrorSide from "../../imgs/tables/blackMirrorPairSideTable.png";
+// mirrors images
 
-// mirrors images 
+import Whitetallmirror from "../../imgs/mirrors/whiteMirror.png";
 
-import Whitetallmirror from '../../imgs/mirrors/mirror.jpg';
+// sofa images
 
-// sofa images 
+import Browncouch from "../../imgs/couches/brownCouch.png";
 
-import Browncouch from '../../imgs/couches/couch.jpeg'
+// Cabinets images
+
+import bodyFigureCabinet from "../../imgs/cabinets/bodyFigureCabinet.png";
+import goldDiamondPatternCabinet from "../../imgs/cabinets/goldDiamondCabinet.png";
 
 function Project() {
+  const [items, setItems] = useState("");
+  const allTables = [
+    Blackcrystaltable,
+    Blacksplashtable,
+    Bluesplashtable,
+    Greenbench,
+    Greensidetable,
+    blackBaseBrownTop,
+    bugattiSideTable,
+    whiteGoldVTable,
+    blackPairMirrorSide,
+  ];
+  const allCabinets = [bodyFigureCabinet, goldDiamondPatternCabinet];
+  const allChairs = [
+    Bluestool,
+    Pinkstool,
+    V2blue,
+    V2orange,
+    V2green,
+    silverMultiColor,
+  ];
+  const allMirrors = [Whitetallmirror];
+  const allCouches = [Browncouch];
 
-    const [items,setItems] = useState('');
+  function setItemName(item) {
+    setItems(item);
+  }
 
+  function displayImages(imgArr) {
+    return imgArr.map((image, i) => (
+      <div key={i} className="project-holder animate__animated animate__fadeIn">
+        <img src={image} alt="" />
+      </div>
+    ));
+  }
 
-    if(items === "" || items === "tables"){
+  if (items === "" || items === "tables") {
     return (
-        <div className="project-full">
-            <div className="project-list-holder">
-                <ul>
-                    <li id="item-selected">MODERNO 2021</li>
-                    <li onClick={() => setItems('tables')} id="item-selected">Table</li>
-                    <li onClick={() => setItems('chairs')}>Chairs</li>
-                    <li onClick={() => setItems('mirrors')}>Mirrors</li>
-                    <li onClick={() => setItems('couches')}>Couch</li>
-                </ul>
-            </div>
-            <div className="project-display-holder">
-                <div className="project-holder animate__animated animate__fadeIn">
-                    <img src={Blackcrystaltable} alt=""/>
-                </div>
-                <div className="project-holder animate__animated animate__fadeIn">
-                    <img src={Blacksplashtable} alt=""/>
-                </div>
-                <div className="project-holder animate__animated animate__fadeIn">
-                    <img src={Bluesplashtable} alt=""/>
-                </div>
-                <div className="project-holder animate__animated animate__fadeIn">
-                    <img src={Greenbench} alt=""/>
-                </div>
-                <div className="project-holder animate__animated animate__fadeIn">
-                    <img src={Greensidetable} alt=""/>
-                </div>
-            </div>
+      <div className="project-full">
+        <TableContent setItemName={setItemName} />
+        <div className="project-display-holder">{displayImages(allTables)}</div>
+      </div>
+    );
+  } else if (items === "chairs") {
+    return (
+      <div className="project-full">
+        <TableContent setItemName={setItemName} />
+        <div className="project-display-holder">{displayImages(allChairs)}</div>
+      </div>
+    );
+  } else if (items === "mirrors") {
+    return (
+      <div className="project-full">
+        <TableContent setItemName={setItemName} />
+        <div className="project-display-holder">
+          {displayImages(allMirrors)}
         </div>
-    )} else if(items === "chairs") {
-        return (
-        <div className="project-full">
-            <div className="project-list-holder">
-                <ul>
-                <li id="item-selected">MODERNO 2021</li>
-                    <li onClick={() => setItems('tables')}>Table</li>
-                    <li onClick={() => setItems('chairs')}  id="item-selected">Chairs</li>
-                    <li onClick={() => setItems('mirrors')}>Mirrors</li>
-                    <li onClick={() => setItems('couches')}>Couch</li>
-                </ul>
-            </div>
-            <div className="project-display-holder">
-                <div className="project-holder animate__animated animate__fadeIn">
-                    <img src={Bluestool} alt=""/>
-                </div>
-                <div className="project-holder animate__animated animate__fadeIn">
-                    <img src={Pinkstool} alt=""/>
-                </div>
-                <div className="project-holder animate__animated animate__fadeIn">
-                    <img src={V2blue} alt=""/>
-                </div>
-                <div className="project-holder animate__animated animate__fadeIn">
-                    <img src={V2orange} alt=""/>
-                </div>
-                <div className="project-holder animate__animated animate__fadeIn">
-                    <img src={V2green} alt=""/>
-                </div>
-            </div>
+      </div>
+    );
+  } else if (items === "couches") {
+    return (
+      <div className="project-full">
+        <TableContent setItemName={setItemName} />
+        <div className="project-display-holder">
+          {displayImages(allCouches)}
         </div>
-        )} else if(items === "mirrors") {
-            return (
-                <div className="project-full">
-                    <div className="project-list-holder">
-                        <ul>
-                        <li id="item-selected">MODERNO 2021</li>
-                            <li onClick={() => setItems('tables')}>Table</li>
-                            <li onClick={() => setItems('chairs')}>Chairs</li>
-                            <li id="item-selected" onClick={() => setItems('mirrors')}>Mirrors</li>
-                            <li onClick={() => setItems('couches')}>Couch</li>
-                        </ul>
-                    </div>
-                    <div className="project-display-holder">
-                        <div className="project-holder animate__animated animate__fadeIn">
-                            <img src={Whitetallmirror} alt=""/>
-                        </div>
-                    </div>
-                </div>
-        )} else if(items === "couches"){
-            return (
-                <div className="project-full">
-                    <div className="project-list-holder">
-                        <ul>
-                        <li id="item-selected">MODERNO 2021</li>
-                            <li onClick={() => setItems('tables')}>Table</li>
-                            <li onClick={() => setItems('chairs')}>Chairs</li>
-                            <li onClick={() => setItems('mirrors')}>Mirrors</li>
-                            <li id="item-selected" onClick={() => setItems('couches')}>Couch</li>
-                        </ul>
-                    </div>
-                    <div className="project-display-holder">
-                        <div className="project-holder animate__animated animate__fadeIn">
-                            <img src={Browncouch} alt=""/>
-                        </div>
-                    </div>
-                </div>
-                )
-        }
+      </div>
+    );
+  } else if (items === "cabinets") {
+    return (
+      <div className="project-full">
+        <TableContent setItemName={setItemName} />
+        <div className="project-display-holder">
+          {displayImages(allCabinets)}
+        </div>
+      </div>
+    );
+  }
 }
 
 export default Project;
