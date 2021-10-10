@@ -140,11 +140,14 @@
     margin-right: 0px;
     width: auto;
     height: fit-content;
+    display: flex;
+    justify-content: center;
   }
   .project-display-holder {
     margin-top: 0px;
   }
-  .project-list-holder {
+  .project-holder > img {
+    width: 70%;
   }
 }
 

@@ -1,15 +1,26 @@
 import React from "react";
+import { useLocation } from "react-router";
 import "./footer.css";
+import Logo from "../../imgs/jmcdesignerlogowhite.png";
 
 function Footer() {
+  const location = useLocation();
+
   return (
-    <div className="full-footer-holder">
+    <div
+      className={
+        location.pathname === "/contact"
+          ? "full-footer-holder-contact"
+          : "full-footer-holder"
+      }
+    >
       <div className="center-footer">
         <div className="logo-footer">
           <div className="lines-footer"></div>
           <div className="name-footer-logo">
-            <h2>JMC</h2>
-            <p>DESIGNER</p>
+            {/* <h2>JMC</h2>
+            <p>DESIGNER</p> */}
+            <img src={Logo} alt="" />
           </div>
           <div className="lines-footer"></div>
         </div>
