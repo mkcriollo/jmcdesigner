@@ -1,0 +1,129 @@
+.full-footer-holder {
+  width: 100%;
+  height: 500px;
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.center-footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.logo-footer > div {
+  width: 320px;
+  height: 50px;
+}
+
+.lines-footer {
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.name-footer-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.name-footer-logo > h2 {
+  font-size: 30px;
+  color: #f2f2f2;
+}
+
+.name-footer-logo > p {
+  font-size: 10px;
+  color: #f2f2f2;
+}
+
+.navigation-footer {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.navigation-footer > div {
+  width: 320px;
+  height: 100px;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-footer-home > a {
+  text-decoration: none;
+  color: #f2f2f2;
+  margin-bottom: 15px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.social-icon-holder {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.social-icon-holder i {
+  font-size: 25px;
+  color: #f2f2f2;
+}
+
+.fa-grip-lines-vertical {
+  margin-top: 20px;
+  font-size: 30px;
+  color: #f2f2f2;
+}
+
+.contact-box-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-box-footer > h2 {
+  color: #f2f2f2;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.contact-box-footer > div {
+  border: #f2f2f2 1px solid;
+  display: flex;
+  justify-content: center;
+  width: 250px;
+  padding: 10px 10px;
+  font-size: 12px;
+  color: #f2f2f2;
+}
+
+.copyright {
+  display: flex;
+  color: #f2f2f2;
+  margin-top: 30px;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.fa-copyright {
+  margin-right: 5px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 568px) {
+  .logo-footer > div {
+    width: 0px;
+    height: 0px;
+  }
+}
