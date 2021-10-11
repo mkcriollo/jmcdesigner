@@ -1,0 +1,85 @@
+.classic-full {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.classic-main-img {
+  width: 100%;
+  height: 500px;
+  position: relative;
+}
+
+.classic-main-img > img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.classic-collect-title-holder {
+  position: absolute;
+  width: fit-content;
+  height: fit-content;
+  bottom: 20%;
+  left: 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.classic-collect-h1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.classic-collect-h1 > h1:first-child {
+  font-size: 36px;
+  letter-spacing: 3px;
+  font-weight: 700;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  margin-right: 10px;
+}
+
+.classic-collect-h1 > h1 {
+  font-size: 36px;
+  letter-spacing: 3px;
+  font-weight: 300;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+}
+
+.classic-collect-title-holder > p {
+  margin-top: 12px;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+}
+
+.classic-info-main-holder {
+  width: 100vw;
+  /* height: fit-content; */
+  height: 1000px;
+  /* background-color: beige; */
+  display: flex;
+  justify-content: center;
+}
+
+#classic-pic2-holder {
+  top: 29%;
+}
+
+.classic-pic1 {
+  width: 400px;
+  height: 400px;
+}
+
+.classic-pic2 {
+  width: 400px;
+  height: 400px;
+}

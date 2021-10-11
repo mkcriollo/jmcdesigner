@@ -7,6 +7,7 @@ import Project from "./components/projects/project.jsx";
 import Collections from "./components/collections/collections.jsx";
 import Location from "./components/location/location.jsx";
 import RhineCollection from "./components/collectionShow/rhimestone.jsx";
+import ClassicCollection from "./components/collectionShow/classic";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Footer from "./components/footer/footer";
 
@@ -22,6 +23,7 @@ function App() {
           <Route path="/collections" component={Collections} />
           <Route path="/location" component={Location} />
           <Route path="/rhinestone" component={RhineCollection} />
+          <Route path="/classic" component={ClassicCollection} />
         </Switch>
         <Footer />
       </div>
