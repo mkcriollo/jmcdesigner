@@ -18,7 +18,7 @@ function Collections() {
       <Link to="/classic">
         <div className="collect3 animate__animated animate__fadeInDown">
           <div></div>
-          <p>CLASSICAL COLLECTION</p>
+          <p>CLASSIC COLLECTION</p>
         </div>
       </Link>
       <div></div>
