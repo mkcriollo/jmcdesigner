@@ -317,8 +317,9 @@
     box-sizing: border-box;
   }
   .rhinestone-pic4-holder > img {
-    width: 388px;
-    height: 510px;
+    height: 400px;
+    object-fit: cover;
+    width: 100%;
   }
 
   .rhinestone-pic4-holder > p {
@@ -334,10 +335,6 @@
   }
   .rhinestone-pic3-holder > img {
     width: 100%;
-  }
-  .rhinestone-pic4-holder > img {
-    width: 100%;
-    height: 300px;
   }
 
   .rhinestone-pic1-holder > p::after {

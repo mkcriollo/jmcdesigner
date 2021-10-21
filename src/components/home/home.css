@@ -30,7 +30,7 @@
 /* end of responsive slider */
 
 .home-page {
-  background: url(../../imgs/mirrors/mirror.jpg) no-repeat center fixed;
+  background: url(../../imgs/mirrors/mirror.jpg) no-repeat center;
   background-size: cover;
   height: 100vh;
   overflow: hidden;
@@ -229,6 +229,7 @@
     width: auto;
   }
   .tag-home {
+    display: none;
     height: auto;
     width: 100vw;
     padding: 50px 50px;
