@@ -25,8 +25,8 @@ function App() {
           <Route path="/rhinestone" component={RhineCollection} />
           <Route path="/classic" component={ClassicCollection} />
         </Switch>
-        <Footer />
       </div>
+      <Footer />
     </Router>
   );
 }

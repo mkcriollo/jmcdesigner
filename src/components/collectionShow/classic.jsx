@@ -31,12 +31,10 @@ function Classic() {
           </div>
           <div className="rhinestone-pic1-holder">
             <img src={Pinkstool} alt="" className="classic-pic1" />
-            <img src="" className="extrapics" alt="" />
             <p>PINK FUR CHAIR</p>
           </div>
           <div className="rhinestone-pic2-holder" id="classic-pic2-holder">
             <img src={Bluestool} alt="" className="classic-pic2" />
-            <img src="" className="extrapics" alt="" />
             <p>BLUE FUR CHAIR</p>
           </div>
         </div>

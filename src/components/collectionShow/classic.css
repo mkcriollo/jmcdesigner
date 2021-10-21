@@ -83,3 +83,159 @@
   width: 400px;
   height: 400px;
 }
+
+@media only screen and (min-width: 320px) and (max-width: 568px) {
+  .classic-info-main-holder {
+    height: fit-content;
+  }
+
+  .rhinestone-collect-h1 > h1:first-child {
+    font-size: 20px;
+    color: #333;
+  }
+
+  .rhinestone-collect-h1 > h1 {
+    font-size: 20px;
+    color: #333;
+  }
+
+  .rhinestone-collect-h1 {
+    flex-direction: column;
+  }
+
+  .rhine-collect-title-holder > p {
+    color: #333;
+    font-size: 10px;
+  }
+
+  .rhine-collect-title-holder {
+    right: 5%;
+    left: auto;
+    width: 200px;
+    background: aliceblue;
+    height: 200px;
+  }
+
+  /* rhinestone info mobile */
+
+  .rhinestone-info-main-holder {
+    flex-direction: column;
+  }
+
+  .rhinestone-center-info {
+    width: 100vw;
+  }
+
+  .rhinestone-info-word-holder {
+    width: 100vw;
+    position: relative;
+    left: 0;
+    top: 0;
+    padding: 30px 15px;
+    box-sizing: border-box;
+  }
+
+  .rhinestone-info-word-holder > p {
+    font-size: 14px;
+  }
+
+  .rhinestone-pic1-holder {
+    position: relative;
+    right: 0;
+    top: 0;
+    margin-bottom: 50px;
+    padding: 0px 13px;
+    box-sizing: border-box;
+  }
+  .rhinestone-pic1-holder > img {
+    width: 388px;
+    height: 510px;
+  }
+
+  .rhinestone-pic1-holder > p {
+    margin-top: 20px;
+    font-size: 12px;
+  }
+
+  .rhinestone-pic2-holder {
+    position: relative;
+    left: 0;
+    top: 0;
+    margin-bottom: 50px;
+    padding: 0px 13px;
+    box-sizing: border-box;
+  }
+  .rhinestone-pic2-holder > img {
+    width: 388px;
+    height: 510px;
+  }
+
+  .rhinestone-pic2-holder > p {
+    margin-top: 20px;
+    font-size: 12px;
+  }
+
+  .rhinestone-pic3-holder {
+    position: relative;
+    right: 0;
+    top: 0;
+    margin-bottom: 50px;
+    padding: 0px 13px;
+    box-sizing: border-box;
+  }
+  .rhinestone-pic3-holder > img {
+    width: 388px;
+    height: 510px;
+  }
+
+  .rhinestone-pic3-holder > p {
+    margin-top: 20px;
+    font-size: 12px;
+  }
+
+  .rhinestone-pic4-holder {
+    position: relative;
+    left: 0;
+    top: 0;
+    margin-bottom: 50px;
+    padding: 0px 13px;
+    box-sizing: border-box;
+  }
+  .rhinestone-pic4-holder > img {
+    height: 400px;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .rhinestone-pic4-holder > p {
+    margin-top: 20px;
+    font-size: 12px;
+  }
+
+  .rhinestone-pic1-holder > img {
+    width: 100%;
+  }
+  .rhinestone-pic2-holder > img {
+    width: 100%;
+  }
+  .rhinestone-pic3-holder > img {
+    width: 100%;
+  }
+
+  .rhinestone-pic1-holder > p::after {
+    right: 15px;
+  }
+  .rhinestone-pic2-holder > p::after {
+    right: 15px;
+  }
+  .rhinestone-pic3-holder > p::after {
+    right: 15px;
+  }
+  .rhinestone-pic4-holder > p::after {
+    right: 15px;
+  }
+
+  .extrapics {
+    display: block;
+  }
+}
