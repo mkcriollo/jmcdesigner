@@ -60,20 +60,20 @@ function Project() {
   const allMirrors = [Whitetallmirror];
   const allCouches = [Browncouch];
 
-  function hideList() {
-    const list = document.querySelector(".project-list-holder");
-    const menuPhone = document.querySelector(".menu-phone");
+  // function hideList() {
+  //   const list = document.querySelector(".project-list-holder");
+  //   const menuPhone = document.querySelector(".menu-phone");
 
-    if (menuPhone.style.display === "none" || menuPhone === undefined) {
-      list.style.zIndex = "3";
-    } else {
-      list.style.zIndex = "0";
-    }
-  }
+  //   if (menuPhone.style.display === "none") {
+  //     list.style.zIndex = "3";
+  //   } else {
+  //     list.style.zIndex = "0";
+  //   }
+  // }
 
-  useEffect(() => {
-    hideList();
-  });
+  // useEffect(() => {
+  //   hideList();
+  // });
 
   function setItemName(item, id) {
     setItems(item);

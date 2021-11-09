@@ -10,14 +10,22 @@ function Nav() {
   function openMenuPhone() {
     let menuPhone = document.querySelector(".menu-phone");
     let button = document.querySelector(".fa-bars");
+    const list = document.querySelector(".project-list-holder");
 
+    if (list) {
+      list.style.zIndex = "0";
+    }
     menuPhone.style.display = "flex";
   }
 
   function closePhoneMenu() {
     let menuPhone = document.querySelector(".menu-phone");
     let button = document.querySelector(".fa-times");
+    const list = document.querySelector(".project-list-holder");
 
+    if (list) {
+      list.style.zIndex = "3";
+    }
     menuPhone.style.display = "none";
   }
 
