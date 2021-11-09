@@ -61,8 +61,8 @@ function Project() {
   const allCouches = [Browncouch];
 
   function setItemName(item, id) {
-    console.log(this);
     setItems(item);
+    window.scrollTo(0, 0);
   }
 
   function displayImages(imgArr) {
