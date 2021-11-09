@@ -47,3 +47,28 @@
   color: #fff;
   cursor: pointer;
 }
+
+@media only screen and (min-width: 320px) and (max-width: 568px) {
+  .main-contact {
+    height: auto;
+    width: auto;
+    background-size: cover;
+    background-position-x: center;
+  }
+  .hello-holder > h1 {
+    font-size: 45px;
+  }
+  .hello-holder {
+    margin-bottom: 80px;
+    margin-top: 80px;
+    width: 100%;
+    padding: 100px 30px;
+  }
+  .hello-holder > i {
+    margin-bottom: 15px;
+  }
+  .hello-holder > p {
+    line-height: 50px;
+    text-align: center;
+  }
+}
