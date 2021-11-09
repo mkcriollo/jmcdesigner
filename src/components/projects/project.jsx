@@ -60,6 +60,21 @@ function Project() {
   const allMirrors = [Whitetallmirror];
   const allCouches = [Browncouch];
 
+  function hideList() {
+    const list = document.querySelector(".project-list-holder");
+    const menuPhone = document.querySelector(".menu-phone");
+
+    if (menuPhone.style.display === "none" || menuPhone === undefined) {
+      list.style.zIndex = "3";
+    } else {
+      list.style.zIndex = "0";
+    }
+  }
+
+  useEffect(() => {
+    hideList();
+  });
+
   function setItemName(item, id) {
     setItems(item);
     window.scrollTo(0, 0);
@@ -118,20 +133,3 @@ function Project() {
 }
 
 export default Project;
-
-// NOTES:
-
-/*
-on click we call setItemName it should change the color of the click item
-
-solution one is have an id and pass to the function as well 
-inside the function we change that id to selected which will be a change of color
-
-problem = once click there is nothing that removes the color 
-
-solution + use an event listener to figure out whats click and before setting the new color remove the color of the others
-
-... look into some notes or online
-
-
-*/
