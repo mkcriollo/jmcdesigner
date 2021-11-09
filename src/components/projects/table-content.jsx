@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import "./project.css";
 
 function TableContent(props) {
   return (
@@ -9,9 +10,7 @@ function TableContent(props) {
         <li onClick={() => props.setItemName("tables")}>Table</li>
         <li onClick={() => props.setItemName("chairs")}>Chairs</li>
         <li onClick={() => props.setItemName("mirrors")}>Mirrors</li>
-        <li id="item-selected" onClick={() => props.setItemName("couches")}>
-          Couch
-        </li>
+        <li onClick={() => props.setItemName("couches")}>Couch</li>
         <li onClick={() => props.setItemName("cabinets")}>Cabinets</li>
       </ul>
     </div>
@@ -19,17 +18,3 @@ function TableContent(props) {
 }
 
 export default TableContent;
-
-// NOTES
-/*
-- Im seperating the table content with what items are being shown 
-
-- solution 1 
-- Using Context API
-
-- solution 2 
-- Using Redux 
-
--- look at some examples on how to solve this    
-
-*/

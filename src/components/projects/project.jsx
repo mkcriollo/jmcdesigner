@@ -60,7 +60,8 @@ function Project() {
   const allMirrors = [Whitetallmirror];
   const allCouches = [Browncouch];
 
-  function setItemName(item) {
+  function setItemName(item, id) {
+    console.log(this);
     setItems(item);
   }
 
@@ -117,3 +118,20 @@ function Project() {
 }
 
 export default Project;
+
+// NOTES:
+
+/*
+on click we call setItemName it should change the color of the click item
+
+solution one is have an id and pass to the function as well 
+inside the function we change that id to selected which will be a change of color
+
+problem = once click there is nothing that removes the color 
+
+solution + use an event listener to figure out whats click and before setting the new color remove the color of the others
+
+... look into some notes or online
+
+
+*/
