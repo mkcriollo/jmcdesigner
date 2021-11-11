@@ -28,6 +28,7 @@ function Nav() {
     }
     menuPhone.style.display = "none";
   }
+  //
 
   return (
     <nav className="navbar">
